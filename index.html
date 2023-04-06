@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="display">
+            <div class="display-left">0</div>
+            <div class="display-right">0</div>
+            <div class="temp-result"></div>
+          </div>
+
+        <div class="keys">
+
+            <div class="row">
+                <button value="C"  class="operator all-clear" data-action="clear">C</button>
+                <button value="CE" class="operator last-entity-clear" data-action="clearItem">CE</button>
+                <button value="%" class="operator" data-action="divid100">%</button>
+                <button value="/" class="operator" data-action="/">/</button>
+            </div>
+
+            <div class="row">
+                <button value="7" class="number">7</button>
+                <button value="8" class="number">8</button>
+                <button value="9" class="number">9</button>
+                <button value="*" class="operator" data-action="×"><span>&#215;</span></button>
+            </div>
+
+            <div class="row">
+                <button value="4" class="number">4</button>
+                <button value="5" class="number">5</button>
+                <button value="6" class="number">6</button>
+                <button value="-" class="operator" data-action="-">-</button>
+            </div>
+
+            <div class="row">
+                <button value="1" class="number">1</button>
+                <button value="2" class="number">2</button>
+                <button value="3" class="number">3</button>
+                <button value="+" class="operator" data-action="+">+</button>
+            </div>
+
+            <div>
+                <button value="0" class="number btn-0">0</button>
+                <button value="." class="number dot" data-action="decimal">.</button>
+                <button value="3" class="equal" data-action="calculate">=</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
